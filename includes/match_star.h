@@ -12,11 +12,15 @@
 # ifndef FALSE
 #  define FALSE 0
 # endif
+# define STAR '*'
 
 t_list	*ft_get_filename_list(char *pattern, DIR *folder);
 void	ft_print_filename_list(t_list *filename_list);
 void	ft_del_content(void *content);
-int		match_star(char *pattern, char *str);
+int		match_star(char *pattern, char *text);
 int		ft_is_dot_dir(char *dir);
+int		ft_is_root_dir(char *dir);
+t_list	*ft_expand_star(char *path);
+t_list	*ft_get_path_parts(char *str);
 
 #endif

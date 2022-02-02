@@ -9,7 +9,10 @@ SRC_FILES		=	main.c \
 					ft_print_filename_list.c \
 					ft_del_content.c \
 					match_star.c \
-					ft_is_dot_dir.c
+					ft_is_dot_dir.c \
+					ft_is_root_dir.c \
+					ft_expand_star.c \
+					ft_get_dir_list.c
 
 OBJ_DIR			=	objects
 

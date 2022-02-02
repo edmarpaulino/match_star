@@ -14,7 +14,7 @@ t_list	*ft_get_filename_list(char *pattern, DIR *folder)
 	{
 		if (match_star(pattern, entry->d_name) && !ft_is_dot_dir(entry->d_name))
 		{
-			new = ft_lstnew(entry->d_name);
+			new = ft_lstnew(ft_strdup(entry->d_name));
 			if (!new)
 			{
 				ft_lstclear(&filename_list, &ft_del_content);
