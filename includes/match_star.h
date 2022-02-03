@@ -14,7 +14,7 @@
 # endif
 # define STAR '*'
 
-t_list	*ft_get_filename_list(char *pattern, DIR *folder);
+void	ft_get_filename_list(t_list **list, char *pattern, DIR *folder, char *path);
 void	ft_print_filename_list(t_list *filename_list);
 void	ft_del_content(void *content);
 int		match_star(char *pattern, char *text);
